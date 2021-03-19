@@ -49,13 +49,15 @@ li {
     height: 120px;
 }
 
-.header__logo a {
+.header__logo a,
+.footer__logo a {
     color: #2aacc8;
     font-size: 50px;
     font-weight: 400;
 }
 
-.header__logo a span {
+.header__logo a span,
+.footer__logo a span {
     color: #000;
     font-weight: 700;
 }
@@ -367,7 +369,7 @@ li {
 
 .clients {
     padding: 0px 0 40px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .clients__inner {
@@ -408,7 +410,8 @@ li {
     width: 24px;
     height: 20px;
 }
-.download{
+
+.download {
     margin-top: 40px;
     padding: 37px 40px 40px 31px;
     border: 1px solid #81e4ed;
@@ -417,13 +420,15 @@ li {
     display: flex;
     justify-content: space-between;
 }
-.download__text{
+
+.download__text {
     font-size: 16px;
     line-height: 26px;
     max-width: 620px;
     color: #363636;
 }
-.download__button a{
+
+.download__button a {
     width: 243px;
     height: 60px;
     font-size: 18px;
@@ -433,11 +438,12 @@ li {
     border-radius: 8px;
     background: linear-gradient(to top, rgb(42, 172, 200) 0%, rgb(96, 206, 222) 15%, rgb(114, 218, 230) 50%, rgb(129, 228, 237) 100%);
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),
-    inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+        inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
     padding: 16px 20px 19px 71px;
     position: relative;
 }
-.download__button a::before{
+
+.download__button a::before {
     content: '';
     position: absolute;
     background-image: url(../images/icons/download.svg);
@@ -446,9 +452,95 @@ li {
     left: 22px;
     top: 11px;
 }
-.footer{
+
+.footer {
     background-color: #e8ebf1;
     padding-top: 33px;
     padding-bottom: 42px;
     border-top: 1px solid #d9d9d9;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #363636;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.footer__item-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.footer__item-text {
+    width: 240px;
+
+}
+
+.footer__text {
+    padding-top: 26px;
+}
+
+.footer__item-list {
+    width: 115px;
+}
+
+.footer__list {
+    padding-top: 15px;
+}
+
+.footer__list li {
+    display: block;
+    line-height: 26px;
+}
+
+.footer__item-contact {
+    width: 150px;
+}
+
+.footer__item-contact address {
+    padding-top: 23px;
+}
+
+.footer__item-contact span {
+    font-weight: 700;
+}
+
+.footer__phone {
+    padding-top: 23px;
+}
+
+.footer__item-social {
+    width: 190px;
+}
+
+#socialTitle {
+    padding-left: 7px;
+}
+
+.footer__social {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__bottom {
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    padding-bottom: 47px;
+    max-width: 707px;
+    line-height: 18px;
+}
+
+.footer__logo {
+    padding-bottom: 43px;
 }
