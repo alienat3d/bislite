@@ -165,14 +165,13 @@ li {
   border-bottom: none;
   transition: all .3s;
 }
-
 /* *adaptive* burger-menu */
-.header__menu-btn {
+.header__menu-btn{
   width: 30px;
   display: none;
 }
 
-.header__menu-row {
+.header__menu-row{
   width: 100%;
   background-color: #000;
   height: 4px;

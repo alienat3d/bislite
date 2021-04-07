@@ -45,6 +45,8 @@
     transition: all .3s;
   }
 
+  .header__drop-down.drop-down {}
+
   .header__drop-down.drop-down .drop-down__list {
     height: 0;
     overflow: hidden;
@@ -60,133 +62,16 @@
     height: auto;
     overflow: hidden;
     opacity: 1;
-    transition: all .3s;
   }
 
   .header__drop-down.drop-down:hover>a {
     color: #000;
     background-color: #fff;
+    border-left: 1px solid rgb(232, 235, 241);
+    border-right: 1px solid rgb(232, 235, 241);
     border-top: 1px solid #e7e7e7;
     border-bottom: none;
     transition: all .0s;
   }
 
-  .header__drop-down>a.active::after {
-    transform: rotate(180deg);
-  }
-
-  .items__inner {
-    flex-wrap: wrap;
-  }
-
-  .item {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-
-  .clients-logos {
-    padding-left: 15px;
-  }
-
-  .download__button {
-    padding-left: 15px;
-  }
-}
-
-@media (max-width: 900px) {
-  .item {
-    padding-right: 15px;
-  }
-  .footer__inner{
-    flex-wrap: wrap;
-  }
-  .footer__item-social {
-    width: 75%;
-    margin-top: 30px;
-  }
-  .footer__copyright{
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 780px) {
-  .clients__inner {
-    flex-wrap: wrap;
-  }
-  .testimonials{
-    max-width: 100%;
-  }
-  .clients-logos{
-    padding-left: 0;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 720px) {
-  .footer__item-text{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 670px) {
-.download{
-  flex-wrap: wrap;
-}
-.download__button{
-  padding-left: 0;
-  margin: 30px auto 0;
-}
-.clients-logos__images img{
-  max-width: 100%;
-}
-  .footer__item-social {
-    width: 100%;
-  }
-
-}
-@media (max-width: 520px) {
-  .item {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-@media (max-width: 440px) {
-  .footer__item-contact{
-    width: 100%;
-  }
-  .footer__inner {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 420px) {
-  .slider__item-title {
-    font-size: 35px;
-    line-height: 41px;
-    margin-left: 15px;
-  }
-  .download{
-    padding: 0;
-  }
-  .download__button{
-    margin: 30 auto 0;
-  }
-  .footer__copyright{
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-  .footer__bottom{
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 380px) {
-  ul.footer__social li{
-    width: 33.333%;
-  }
-}
-
-
-/* min-width */
-@media (min-width: 960px) {
-  .header__menu>ul {
-    display: block !important;
-  }
 }
