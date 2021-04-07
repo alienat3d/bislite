@@ -62,10 +62,6 @@ li {
   font-weight: 700;
 }
 
-.header__menu {
-  margin-right: 20px;
-}
-
 /* means, that it gives the attribute to the neighbor element, so in this case the very left <li> won't get margin-left, as it has no neighbor on the left */
 .header__menu li+li {
   margin-left: 50px;
@@ -79,6 +75,15 @@ li {
   padding-bottom: 13px;
 }
 
+.header__menu a:hover {
+  color: #2aacc8;
+}
+
+.header__link-home,
+.header__link-about {
+  margin-right: -17px;
+}
+
 .header__drop-down.drop-down {
   margin-left: 39px;
 }
@@ -88,7 +93,8 @@ li {
 }
 
 .header__drop-down.drop-down+.header__link-blog {
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: -17px;
 }
 
 .header__drop-down {
@@ -115,10 +121,6 @@ li {
   padding: 12px 0 12px 11px;
   font-weight: 400;
   text-transform: none;
-}
-
-.drop-down__list a:hover {
-  color: #2aacc8;
 }
 
 .header__drop-down .drop-down__list li {
@@ -165,13 +167,14 @@ li {
   border-bottom: none;
   transition: all .3s;
 }
+
 /* *adaptive* burger-menu */
-.header__menu-btn{
+.header__menu-btn {
   width: 30px;
   display: none;
 }
 
-.header__menu-row{
+.header__menu-row {
   width: 100%;
   background-color: #000;
   height: 4px;
