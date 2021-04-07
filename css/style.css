@@ -134,7 +134,7 @@ li {
   position: relative;
   padding-left: 11px;
   padding-right: 26px;
-  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   border-right: 1px solid transparent;
   border-top: 5px solid transparent;
 }
@@ -305,7 +305,7 @@ li {
 .clients-logos__title::before {
   content: '';
   position: absolute;
-  top: 19px;
+  top: 24px;
   left: 0;
   background-image: url(../images/slider/cursor.svg);
   width: 14px;
